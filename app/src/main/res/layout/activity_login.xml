@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.onlinebookingapp.Login"
+    android:background="@color/login_bk_color"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:layout_gravity="center">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:paddingTop="10dp"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    style="@style/viewParent.headerText.NoMode"
+                    android:text="Already \nhave an \nAccount?"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="155dp"
+                    android:layout_height="155dp"
+                    app:cardCornerRadius="250dp"
+                    android:layout_marginLeft="200dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="right"
+                        app:cardCornerRadius="250dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:background="@mipmap/bus"
+                            android:scaleType="centerCrop"
+                            android:layout_marginLeft="-1dp"/>
+                        />
+
+                    </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="#f5a622"
+                android:textSize="14sp"
+                android:text="WELCOME TO SUPERMETRO ONLINE BOOKING"
+                android:textAlignment="center"
+                android:visibility="visible" />
+
+            <TextView
+                style="@style/parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="#f5a622"
+                android:textSize="14sp"
+                android:text="ENTER CREDENTIALS "
+                android:textAlignment="center"
+                android:visibility="visible" />
+            <EditText
+                android:id="@+id/loginemail"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_radius"
+
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="6dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:paddingEnd="6dp"
+                android:paddingStart="10dp" />
+
+            <EditText
+                android:id="@+id/loginPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_radius"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                android:paddingLeft="10dp"
+                android:paddingRight="6dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:paddingEnd="6dp"
+                android:paddingStart="10dp"
+               />
+
+
+
+            <TextView
+                android:id="@+id/forgotPassword"
+                style="@style/viewParent"
+                android:text="@string/forgot_password"
+                android:textColor="@color/themeColor"
+                android:textSize="@dimen/newsMoreTextSize"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/loginbtn"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_btn"
+                android:text="@string/login"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="12"
+                android:gravity="center"
+                android:layout_marginTop="30dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_weight="3"/>
+
+                <TextView
+                    android:id="@+id/registrationlink"
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="#f5a622"
+                    android:textSize="15sp"
+                    android:text="@string/new_user_create_account"
+                    android:layout_weight="6"
+                   />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_weight="3"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/book_safely_arrive_safely"
+                    android:textColor="#f5a622"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_side_bg"
+        android:layout_alignParentEnd="true" />
+    <ImageView
+        android:id="@+id/loginimg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_img"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="11dp"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
+</RelativeLayout>

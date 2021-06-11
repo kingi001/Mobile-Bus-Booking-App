@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">onlinebookingapp</string>
+    <string name="your_email">Your email</string>
+    <string name="verify_now">verify Now</string>
+    <string name="book_safely_arrive_safely">BOOK SAFELY ARRIVE SAFELY</string>
+    <string name="new_user_create_account">New user? Create Account</string>
+    <string name="login">login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password">Password</string>
+    <string name="_254793532363">+254793532363</string>
+    <string name="phone">Phone</string>
+    <string name="kingikhamis518_gmail_com">kingikhamis518@gmail.com</string>
+    <string name="email">Email</string>
+    <string name="east_africa_kenya">East Africa,kenya</string>
+    <string name="khamis_kingi">Khamis kingi</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

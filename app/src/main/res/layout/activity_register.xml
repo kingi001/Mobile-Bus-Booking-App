@@ -1,0 +1,218 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context="com.example.onlinebookingapp.Register"
+    android:background="@color/login_bk_color"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+
+ <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Here’s\nyour first\nstep with \nus! "
+                    android:textColor="@color/black" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="155dp"
+                    android:layout_height="155dp"
+                    app:cardCornerRadius="150dp"
+                    android:layout_marginLeft="200dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="153dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="right"
+                        app:cardCornerRadius="250dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@mipmap/bus"
+                            android:scaleType="centerCrop"
+                            android:layout_marginRight="5dp"/>
+                        />
+
+                    </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="#f5a622"
+                android:textSize="14dp"
+                android:text="WELCOME TO SUPERMETRO ONLINE BOOKING"
+                android:textAlignment="center"
+                android:visibility="visible"></TextView>
+            <TextView
+                style="@style/parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="#f5a622"
+                android:textSize="14dp"
+                android:text="CREATE ACCOUNT"
+                android:textAlignment="center"
+                android:visibility="visible"></TextView>
+
+
+            <EditText
+                android:id="@+id/profilefullName"
+            android:layout_width="fill_parent"
+
+                android:layout_gravity="center"
+style="@style/modifiedEditText"
+                android:layout_height="55dp"
+                android:background="@drawable/edit_radius"
+                android:hint="Full Name"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="@color/black"
+                android:textSize="14dp" />
+
+
+            <EditText
+                android:id="@+id/profileEmail"
+              android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_radius"
+                android:hint="Email Adress"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="@color/black"
+                android:textSize="14dp"
+                style="@style/parent"
+                />
+
+
+            <EditText
+                android:id="@+id/profilePhone"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_radius"
+                android:hint="Mobile Number"
+                android:paddingLeft="10dp"
+android:inputType="number"
+                style="@style/modifiedEditText"
+
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="@color/black"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_gravity="center"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_radius"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="@color/black"
+                android:textSize="14dp"
+                style="@style/modifiedEditText"/>
+
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+
+                android:background="@drawable/login_btn"
+                android:layout_gravity="center"
+
+                android:text="register"
+                android:textColor="#fff"
+                android:textSize="12dp"
+                />
+            <TextView
+                android:id="@+id/LoginBtnlink"
+                style="@style/parent"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#f5a622"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:text="Already have an account? Login Here !"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                />
+
+
+        </LinearLayout>
+ </ScrollView>
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_side_bg"/>
+    <ImageView
+        android:id="@+id/registerimg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_img"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="30dp"
+        />
+
+</RelativeLayout>
+
+
+

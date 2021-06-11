@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Bookingpage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5a622"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/AppTheme.Toolbar"
+           >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="welcome"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="200dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  android:paddingLeft="260dp"
+                    android:src="@drawable/ic_person_outline_white_24dp"
+                    />
+
+                <TextView
+                    android:id="@+id/profilefullName"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="290dp"
+                    android:layout_marginLeft="290dp"
+                    android:text="Your Name"
+                    android:onClick="account"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/login_bk_color"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/account"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/back"
+                        android:layout_marginTop="50dp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <Button
+
+                            android:id="@+id/button"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/logout"
+                            android:onClick="logout"
+                            android:paddingTop="50dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="logout"
+                            android:textColor="@color/login_bk_color"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/profileName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/print_clearly"
+                        android:text="Book With Ease !"
+
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="32sp"
+                        android:gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="100dp"
+                        android:fontFamily="@font/gotham"
+                        android:text="Where do you want to go."
+                        android:textAlignment="center"
+                        android:textColor="#f5a622"
+                        android:textSize="20dp"
+                        android:gravity="center_horizontal" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="11dp"
+                   >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="-2dp"
+                            android:textColorHint="#FF8A99AF">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/actv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:completionThreshold="1"
+                                android:layout_marginTop="12dp"
+                                android:completionHint="Your location"
+                                android:drawablePadding="16dp"
+                                android:drawableStart="@drawable/ic_location_on_light_blue_24dp"
+                                android:hint="From"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:drawableLeft="@drawable/ic_location_on_light_blue_24dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:textColorHint="#FF8A99AF">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/act2"
+                                android:completionThreshold="1"
+                                android:completionHint="going to"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:drawablePadding="16dp"
+                                android:drawableStart="@drawable/ic_location_on_light_blue_24dp"
+                                android:hint="Destination"
+                                android:layout_marginTop="12dp"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:drawableLeft="@drawable/ic_location_on_light_blue_24dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:textColorHint="#FF8A99AF">
+
+                            <EditText
+                                android:id="@+id/tv_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:drawablePadding="16dp"
+                                android:drawableStart="@drawable/ic_date_range_light_blue_24dp"
+                                android:hint="Select Date"
+                                android:layout_marginTop="12dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:drawableLeft="@drawable/ic_date_range_light_blue_24dp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/search_buses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="13dp"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="Search Buses"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/verifyMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="Email not verified"
+                    android:textColor="@color/design_default_color_primary"
+                    android:textSize="10dp"
+                    android:visibility="invisible">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/resendCode"
+                    android:layout_width="120dp"
+                    android:layout_marginTop="-30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:onClick="logout"
+                    android:text="@string/verify_now"
+                  android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/profileEmail"
+                    android:layout_width="179dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="225dp"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="-35dp"
+                    android:text="@string/your_email"
+                    android:visibility="invisible">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
